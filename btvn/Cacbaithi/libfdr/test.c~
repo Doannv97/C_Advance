@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include "jrb.h"
+
+void print_book(JRB book){
+  JRB node;
+  jrb_traverse(node,book) printf("%d\n",node->key);
+
+int main(){
+  JRB book,node;
+  book=make_jrb();
+  jrb_insert_int(book,1,new_jval_i(100));
+
+
+  
+  return 0;
+}
